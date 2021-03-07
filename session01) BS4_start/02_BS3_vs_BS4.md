@@ -8,7 +8,7 @@
 |/js/|/ja/|
 |/font/||
 
-부트스트랩4에서 Glyphicons 미지원으로 fonts 폴더가 없어졌다.
+부트스트랩4에서 Glyphicons이 더이상 지원하지 않아 fonts 폴더가 없어졌다.
 
 
 ### 2. install
@@ -34,7 +34,8 @@
 
 한가지 더 알아두어야 할 점은 .container  와 .row 이다.
 
-부트스트랩3의 경우 margin 15px의 값을 지녔으나, 부트스트랩4의 경우 .row는 rem으로 좌우 margin -.9375rem, padding 0.9375rem을 가지고 있다.   
+부트스트랩3의 경우 margin 15px의 값을 지녔으나,   
+부트스트랩4의 경우 .row는 rem으로 좌우 margin -.9375rem, padding 0.9375rem을 가지고 있다.   
 .container도 rem으로 셋팅되어 있어 최대폭을 가지고 있다.  
 
 
@@ -61,27 +62,30 @@ _디테일한 부분은 공식 사이트를 찾아가자!_
 
 완전히 새로운 기능들도 추가 되었다. _디테일한 부분은 공식 사이트를 찾아가자!_
 
-    1. Cards
+1. Cards
 
-    부트스트랩4에서 Panels와 Wells가 없어지고 Cards가 추가되었다.    
-    ·  .card 
+    부트스트랩4에서 Panels와 Wells가 없어지고 Cards가 추가되었다.  
+    
+    .card 
 
-    ·  .card-block 
+    .card-block 
 
-    ·  .card-title : 타이틀
+    .card-title : 타이틀
 
-    ·  .card-text : 글요소
+    .card-text : 글요소
 
-    · .card-header : card의 헤더
+    .card-header : card의 헤더
 
-    · .card-footer : card의 푸터
+    .card-footer : card의 푸터
+    
+2. Flexbox
 
-    2. Flexbox
+    Flexbox의 레이아웃은 UI 레이아웃을 위한 최적화된 박스 모델이라고 할 수 있다.   
+    페이지의 레이아웃이 리사이즈될 때 최적화 된 배치가 이루어진다. 단, Flexbox은 IE9는 지원하지 않는다.
 
-    Flexbox의 레이아웃은 UI 레이아웃을 위한 최적화된 박스 모델이라고 할 수 있다. 페이지의 레이아웃이 리사이즈될 때 최적화 된 배치가 이루어진다. 단, Flexbox은 IE9는 지원하지 않는다.
+3. Tooltips
 
-    3. Tooltips
-
-    부트스트랩3에서 tipsy로 사용되었으나 부트스트랩4에서 tether로 바뀌었다. 툴팁을 사용 시 bootstrap.js 바로 앞에 tether.js를 인클루드(include) 한다.
+    부트스트랩3에서 tipsy로 사용되었으나 부트스트랩4에서 tether로 바뀌었다.   
+    툴팁을 사용 시 bootstrap.js 바로 앞에 tether.js를 인클루드(include) 한다.
 
 _필자도 아직 온전히 이해하지 않았지만 차차 배우도록 하자!_    
