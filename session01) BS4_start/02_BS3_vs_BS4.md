@@ -47,7 +47,7 @@ reboot.css는 부트스트랩의 리셋과 기본적인 스타일을 포함한�
 
 ### 5. class의 변경과 업데이트
 
-적지만 변경되거나 사라진 class가 있다. _디테일한 부분은 공식 사이트를 찾아가자!_
+적지만 변경되거나 사라진 class가 있다. _디테일한 부분은 [부트스트랩 공식사이트](https://getbootstrap.com/docs/5.0/getting-started/introduction/)를 방문하자!_
 
 
 ### 6. JavaScript
@@ -56,11 +56,11 @@ reboot.css는 부트스트랩의 리셋과 기본적인 스타일을 포함한�
     · ES6의 지원 종료
     · AMD와 UMD 문제 해결
 
-_디테일한 부분은 공식 사이트를 찾아가자!_
+ _디테일한 부분은 [부트스트랩 공식사이트](https://getbootstrap.com/docs/5.0/getting-started/introduction/)를 방문하자!_
 
 ### 새로운 기능
 
-완전히 새로운 기능들도 추가 되었다. _디테일한 부분은 공식 사이트를 찾아가자!_
+완전히 새로운 기능들도 추가 되었다. _디테일한 부분은 [부트스트랩 공식사이트](https://getbootstrap.com/docs/5.0/getting-started/introduction/)를 방문하자!_
 
 1. Cards
 
