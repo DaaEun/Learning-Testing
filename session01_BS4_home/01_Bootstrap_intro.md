@@ -4,7 +4,7 @@
 
     Bootstrap은 반응형이며 모바일 우선인 웹프로젝트 개발을 위한 가장 인기있는 HTML, CSS, JavaScript 프레임워크이다.
 
-_쉽게 말해, Bootstrap은 HTML, CSS, JS 도우미 역할이다._
+쉽게 말해, Bootstrap은 HTML, CSS, JS의 도우미 역할이다.
 
 ### Bootstrap 특징
 
