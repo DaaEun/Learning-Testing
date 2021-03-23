@@ -1,9 +1,9 @@
-# Studying Bootstrap
+# Studying & Testing
 
-Bootstrap4 공부하기
+### Studying : 공부한 내용을 토대로 정리합니다.
+### Testing : 삽질 총량의 법칙 - 삽질중
 
-참고자료  
+***
+_[w3schools](https://www.w3schools.com/bootstrap4/default.asp)_
 
-* [w3schools](https://www.w3schools.com/bootstrap4/default.asp)
-
-* [getbootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction)
+_[getbootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction)_
