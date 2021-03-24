@@ -10,3 +10,5 @@
 6. Terminal 창에서 파라미터값 받았는지 확인
 >7. Error: Cannot enqueue Query after fatal error.
 8. 해결못함..
+
+9. 해결완료
