@@ -1,0 +1,29 @@
+//add.ejs
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><a href='/topic'>Server Side Javascript</a></h1>
+    <ol>
+      <% for(var i = 0; i<topics.length; i++){%> // 글목록 보여주기
+        <li>
+          <a href='/topic/<%= topics[i].id %>'>
+            <%= topics[i].title %>
+          </a>
+        </li>
+      <% }; %>
+    </ol>
+    <article>
+      <form action="/topic/add" method="post">  //form태그를 통하여 데이터를 post 방식으로 전달
+        <p><input type="text" name="title" placeholder="title"></p>
+        <p><textarea name="description" placeholder="description"></textarea></p>
+        <p><input type="text" name="author" placeholder="author"></p>
+        <p><input type="submit"></p>
+      </form>
+    </article>
+  </body>
+</html>

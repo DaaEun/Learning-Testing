@@ -1,0 +1,37 @@
+//view.ejs
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><a href='/topic'>Server Side Javascript</a></h1>
+    <ol>
+      <% for(var i = 0; i< topics.length; i++){%> // 전달 받은 topics를 통하여 글목록 보여주기
+        <li>
+          <a href='/topic/<%= topics[i].id %>'> // 링크를 누르면, db에 저장된 각 글의 id 값을 통하여 아래의 article 태그 안에 글의 상세 내용을 보여주게 한다.
+            <%= topics[i].title %>
+          </a>
+        </li>
+      <% }; %>
+    </ol>
+    <article>
+      <% if(topic){ %> // 글 목록을 눌렀을때, topic객체를 get방식으로 넘겨 받을 수 있고,
+        <h2><%= topic.title %></h2>  topic 객체의 title키를 통하여 제목을 알 수 있고,
+        <p> <%= topic.description %> </p> description키를 통하여 내용을 알 수 있고,
+        <p><%= 'by ' + topic.author %></p> 	author키를 통하여 저자를 알 수 있다.
+      <% } else { %> // 글 목록을 누를지 않았을때,(id 값이 없을때 환영한다는 내용을 띄운다.)
+        <h2>Welcome</h2>
+         This is server side javascript tutorial.
+      <% } %>
+    </article>
+    <ul>
+        <li><a href="/topic/add">add</a></li> // '/topic/add'라우터로 연결(get방식)
+      <% if(topic){ %> // get방식으로 전달 받은 데이터중에, topic이 있다면, 수정버튼과 삭제버튼을 보여준다.
+        <li><a href='/topic/<%= topic.id %>/edit'>edit</a></li>
+        <li><a href="/topic/<%= topic.id %>/delete">delete</a></li>
+      <% } %>
+    </ul>
+  </body>
+</html>

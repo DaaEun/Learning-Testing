@@ -1,0 +1,28 @@
+//delete.ejs
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><a href='/topic'>Server Side Javascript</a></h1>
+    <ol>
+      <% for(var i = 0; i<topics.length; i++){%>
+        <li>
+          <a href='/topic/<%= topics[i].id %>'>
+            <%= topics[i].title %>
+          </a>
+        </li>
+      <% }; %>
+    </ol>
+    <article>
+      <h1>DELETE? <%= topic.title %> </h1> 
+      <form action='/topic/<%= topic.id %>/delete' method="post"> //post메소드를 사용한다.(왜????)
+        <p><input type="submit" value="YES"></p>
+      </form>
+      <a href='/topic/<%= topic.id %>'>no</a>
+    </article>
+  </body>
+</html>

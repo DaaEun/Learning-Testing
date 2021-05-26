@@ -1,0 +1,32 @@
+//edit.ejs
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><a href='/topic'>Server Side Javascript</a></h1>
+    <ol>
+      <% for(var i = 0; i<topics.length; i++){%>
+        <li>
+          <a href='/topic/<%= topics[i].id %>'>
+            <%= topics[i].title %>
+          </a>
+        </li>
+      <% }; %>
+    </ol>
+    <article>
+      <form action="/topic/<%= topic.id %>/edit" method="post">
+        <p><input type="text" name="title" value='<%= topic.title %>' placeholder="title" ></p> // value를 통하여 전달받은 topic객체의(수정해야할) 데이터를 표시할 수 있다.
+        <p><textarea name="description" rows="6" cols="50" placeholder="description"><%= topic.description %></textarea></p>// textarea는 태그들 사이에 데이터를 입력해야 표시가능.(	rows는 행이고, cols는 열이다 이걸 통하여 textarea의 크기를 조정한다. )
+        <p><input type="text" name="author" value='<%= topic.author %>' placeholder="author"></p>
+        <p><input type="submit"></p>
+      </form>
+    </article>
+    <ul>
+        <li><a href="/topic/add">add</a></li>
+    </ul>
+  </body>
+</html>
